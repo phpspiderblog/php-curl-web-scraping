@@ -54,43 +54,6 @@ cd php-curl-web-scraping
 
 ---
 
-## ▶️ Usage
-
-Basic example:
-
-```php
-<?php
-
-$url = "https://example.com";
-
-$ch = curl_init();
-
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$response = curl_exec($ch);
-
-if(curl_errno($ch)){
-    echo 'Error: ' . curl_error($ch);
-}
-
-curl_close($ch);
-
-echo $response;
-```
-
----
-
-## 🧠 How It Works
-
-1. Initialize cURL session
-2. Set request options
-3. Execute request
-4. Handle response
-5. Close connection
-
----
-
 ## 🔍 Use Cases
 
 * Data extraction from websites
@@ -134,7 +97,7 @@ If you found this helpful:
 ## 📢 Author
 
 Kapil Verma
-PHP Developer | Web Scraping Enthusiast
+PHP Developer | Backend Engineer | Technical Blogger
 
 ---
 
