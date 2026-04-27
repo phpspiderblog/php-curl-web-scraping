@@ -8,7 +8,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
 
-echo $response;
+//echo $response;
 //Adding User-Agent (Avoid Basic Blocking)
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0");
 //Handling headers

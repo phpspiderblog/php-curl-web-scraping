@@ -64,6 +64,12 @@ cd php-curl-web-scraping
 
 ---
 
+## Example Output
+
+![Output](assets/images/output.png)
+
+---
+
 ## ⚠️ Disclaimer
 
 This project is for **educational purposes only**.
