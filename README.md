@@ -1,2 +1,143 @@
-# php-curl-web-scraping
-PHP cURL web scraping tutorial project with real-world examples, including HTTP requests, HTML parsing, and scalable data extraction techniques.
+# PHP cURL Web Scraping
+
+A practical, real-world PHP cURL web scraping project that demonstrates how to extract data from websites, handle HTTP requests, parse HTML, and deal with common scraping challenges.
+
+---
+
+## 🚀 Overview
+
+This project is designed to help developers learn **web scraping using PHP cURL** from scratch to advanced level.
+
+You’ll learn how to:
+
+* Send HTTP requests using cURL
+* Fetch webpage content
+* Parse HTML data
+* Handle headers, cookies, and user agents
+* Avoid basic scraping blocks
+* Build scalable scraping scripts
+
+---
+
+## 📌 Features
+
+* ✅ Simple and clean PHP implementation
+* ✅ Real-world scraping examples
+* ✅ cURL request handling (GET/POST)
+* ✅ Custom headers & user-agent support
+* ✅ Error handling and debugging
+* ✅ Beginner to intermediate friendly
+
+---
+
+## 🛠️ Requirements
+
+* PHP 7.4 or higher
+* cURL extension enabled
+
+Check if cURL is enabled:
+
+```bash
+php -m | grep curl
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/php-curl-web-scraping.git
+cd php-curl-web-scraping
+```
+
+---
+
+## ▶️ Usage
+
+Basic example:
+
+```php
+<?php
+
+$url = "https://example.com";
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$response = curl_exec($ch);
+
+if(curl_errno($ch)){
+    echo 'Error: ' . curl_error($ch);
+}
+
+curl_close($ch);
+
+echo $response;
+```
+
+---
+
+## 🧠 How It Works
+
+1. Initialize cURL session
+2. Set request options
+3. Execute request
+4. Handle response
+5. Close connection
+
+---
+
+## 🔍 Use Cases
+
+* Data extraction from websites
+* Price monitoring
+* Content aggregation
+* Automation scripts
+* SEO data collection
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for **educational purposes only**.
+Always respect website terms of service and robots.txt before scraping.
+
+---
+
+## 📚 Learn More (Full Guide)
+
+👉 Read the complete step-by-step tutorial:
+https://phpspiderblog.com/php-curl-web-scraping/
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repo and submit a pull request.
+
+---
+
+## ⭐ Support
+
+If you found this helpful:
+
+* Star ⭐ the repo
+* Share it with others
+
+---
+
+## 📢 Author
+
+Kapil Verma
+PHP Developer | Web Scraping Enthusiast
+
+---
+
+## 🔗 Keywords (SEO)
+
+php web scraping, php curl scraper, web scraping php tutorial, data extraction php, curl php example, php automation scripts
